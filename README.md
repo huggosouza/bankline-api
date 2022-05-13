@@ -1,9 +1,18 @@
-# Getting Started
+# Bankline API
 
-### Reference Documentation
-For further reference, please consider the following sections:
+A REST API using Spring Boot, hibernate, JPA, Maven etc.
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.6.7/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.6.7/maven-plugin/reference/html/#build-image)
+I needed to add these lines:
 
+  <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+       </configuration>
+  </plugin>
+  
+in pom.xml so I could build it on Heroku. You probably ain't going to need this if you're not deploying to Heroku.
+
+I've written this code in Santander Dev Week Bootcamp, so I haven't done anything alone, I've acquired many experience with it and understood many concepts I wasn't familiriazed yet and I'm very happy with it.
